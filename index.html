@@ -852,7 +852,7 @@ btn.addEventListener('click', () => {
   try { localStorage.setItem('ukb-theme', next); } catch(e) {}
 });
 
-(function init() {
+(function init() {    
   let saved;
   try { saved = localStorage.getItem('ukb-theme'); } catch(e) {}
   const sys = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
